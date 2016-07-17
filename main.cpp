@@ -157,9 +157,9 @@ int main() {
     float Final = 0, assignements = 0, midermEx = 0, finalEx = 0, participation = 0;
     
     char assign_msg[] = "Assigments grade (1-100): ", midermEx_msg = "Midterm grade (1-100): ";
-    assignements =  input_grade(msg);
-    midermEx = input
-    
+    assignements =  input_grade(assign_msg);
+	midermEx = input_grade(midermEx_msg);
+   
     
     Final = 0.4*assignements + 0.15*midermEx + 0.35*finalEx + 0.1*participation;
     
@@ -169,8 +169,6 @@ int main() {
     
     return 0;
 }
-
-
 
 
 
