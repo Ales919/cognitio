@@ -47,7 +47,7 @@ float input_grade(char *msg)
 }
 
 
-int main() {
+int main(int argc,int argv**) {
    //=========================================================================
     /*
     int input_var = 0;
