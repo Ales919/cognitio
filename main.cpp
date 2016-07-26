@@ -34,6 +34,7 @@ float salary3(int sales)
 }
 */
 
+/*
 float input_grade(char *msg)
 {
     float value;
@@ -46,8 +47,18 @@ float input_grade(char *msg)
     }
     cout<< endl;
     return value;
+}*/
+/*
+void StartUp(){
+    const char* intro_msg;
+    intro_msg = "\nWelcome to Artillery.\nYou are in the middle of a war and being charged by thousands of enemies.\nYou have one cannon, which you can shoot at any angle.\nYou only have 10 cannonballs for this target...\nLet's begin...\n";
+    cout << intro_msg<<endl;
 }
 
+int Fire(){
+    
+}
+*/
 
 int main() {
    //=========================================================================
@@ -182,6 +193,17 @@ int main() {
     
     
     //-----------------------------------------------------
+    /*
+    StartUp();
+    int killed = 0;
+    
+    do {
+        killed = Fire(); // Fire() contains the main loop of each round.
+        cout << "I see another one, care to shoot again? (Y/N) " << endl;
+        cin >> done;
+    } while (done != 'n');
+    cout << "You killed " << killed << " of the enemy." << endl;
+    */
     
     //-----------------------------------------------------
     
