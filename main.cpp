@@ -37,17 +37,19 @@ float salary3(int sales)
 float input_grade(char *msg)
 {
     float value;
+    //cout<< "Entered the function"<< endl;
     cout << msg;
     if (!(cin >>value))
     {
         cout << "wrong input";
         exit(0);
     }
+    cout<< endl;
     return value;
 }
 
 
-int main(int argc,int argv**) {
+int main() {
    //=========================================================================
     /*
     int input_var = 0;
@@ -154,17 +156,35 @@ int main(int argc,int argv**) {
     People << first_name << endl << last_name << endl << age << endl;
     */
     //-----------------------------------------------------
+
+    /*
     float Final = 0, assignements = 0, midermEx = 0, finalEx = 0, participation = 0;
     
-    char assign_msg[] = "Assigments grade (1-100): ", midermEx_msg = "Midterm grade (1-100): ";
+    char assign_msg[] = "Assigments grade (1-100): ", midermEx_msg[] = "Midterm grade (1-100): ",finalEx_msg[] = "Final Exam grade (1-100): ", part_msg[] = "Participation grade (0-100) ",DEBUG_IN;
+    
+    cout << endl;
     assignements =  input_grade(assign_msg);
 	midermEx = input_grade(midermEx_msg);
-   
+    finalEx = input_grade(finalEx_msg);
+    participation = input_grade(part_msg);
     
     Final = 0.4*assignements + 0.15*midermEx + 0.35*finalEx + 0.1*participation;
+    cout<< "The final grade is: " << Final<< endl;
+    
+    if (finalEx < 50.0){
+        cout<< "We will try again, together"<<endl;
+    }else if (finalEx<70){
+        cout<< "Good job!"<<endl;
+    }else{
+        cout<< "Great job. GG!!!"<<endl;
+    }
+    */
     
     
     //-----------------------------------------------------
+    
+    //-----------------------------------------------------
+    
     //=========================================================================
     
     return 0;
