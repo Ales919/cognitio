@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-
+/*
 class Time {
 private:
     int hours_;
@@ -41,3 +41,59 @@ int main() {
         cout << endl;
     }
 }
+*/
+//-------------------------------------------------------
+class rect
+{
+    float a,b;
+public:
+
+    rect(float in_a,float in_b){
+        a = in_a;
+        b = in_b;
+        cout<<"Constructed with [a,b]: ["<<a<<","<<b<<"]"<<endl;
+    }
+    rect(){
+        a = 0;
+        b = 0;
+        cout<<"Constructed"<<endl;
+    }
+    ~rect(){
+        
+        cout<<"Destructed"<<endl;
+    }
+    
+    
+   float embvado(){
+        float E  = a*b;
+        return E;
+    }
+    void set_ab(float in_a, float in_b){
+        a = in_a;
+        b = in_b;
+        
+    }
+};
+
+
+int main(){
+    float E1, E2;
+    rect rec1,rec2(2,2);
+    //rec1.set_ab(2,4);
+    //rec2.set_ab(3,4);
+
+    
+    E1 = rec1.embvado();
+    E2 = rec2.embvado();
+    
+    cout<< "E1: "<<E1<< " || E2: "<< E2<< endl;
+}
+
+
+
+
+
+
+
+
+
