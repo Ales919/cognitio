@@ -3,7 +3,7 @@
 
 #include <iostream>
 using namespace std;
-/*
+///*
 class Time {
 private:
     int hours_;
@@ -12,6 +12,7 @@ private:
 public:
     void set(int h, int m, int s) {hours_ = h; minutes_ = m; seconds_ = s; return;}
     void increment();
+    void decrement();
     void display();
 };
 
@@ -23,6 +24,23 @@ void Time::increment() {
     minutes_ %= 60;
     hours_ %= 24;
     return;
+}
+void Time::decrement(){
+    
+        seconds_--;
+        if (seconds_ < 0) {
+            seconds_ += 60;
+            minutes_--;
+        }
+        if (minutes_ < 0) {
+            minutes_ += 60;
+            hours_--;
+        }
+        if (hours_ < 0) {
+            hours_ += 24;
+        }
+        return;
+    
 }
 
 void Time::display() {
@@ -40,9 +58,16 @@ int main() {
         timer.display();
         cout << endl;
     }
+    for (int i = 0; i < 5; i++) {
+        timer.decrement();
+        timer.display();
+        cout << endl;
+    }
+
 }
-*/
+//*/
 //-------------------------------------------------------
+/*
 class rect
 {
     float a,b;
@@ -88,7 +113,7 @@ int main(){
     
     cout<< "E1: "<<E1<< " || E2: "<< E2<< endl;
 }
-
+*/
 
 
 
