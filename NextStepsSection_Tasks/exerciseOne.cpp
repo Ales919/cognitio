@@ -10,9 +10,11 @@ bool testSubject(long int num);
 
 int main(){
     
-    long int subject = 0, sqred,allNums[10],max = 5000;
-   // long int subject = 0, sqred,*allNums,max = 5000;
-   //allNums = new long int;
+    //long int subject = 0, sqred,allNums[10],max = 5000; // Array implementation
+    long int subject = 0, sqred,max = 5000;
+    long int* allNums;
+    allNums = new long int;
+    
     int count = 0;
     bool done = false;
     
@@ -23,7 +25,8 @@ int main(){
         if (testSubject(sqred)){
             
             
-            allNums[count] = sqred;
+            //allNums[count] = sqred;
+            *(allNums+count) = sqred;
             cout<< sqred<<" with base "<<subject<< endl;
             count++;
         }
@@ -33,7 +36,9 @@ int main(){
     cout<<endl<< "count: "<<count<< " in a search up to "<<max<<endl<<endl;
     for (int j=0; j<count; j++){
     
-        cout<< allNums[j]<<", ";
+        //cout<< allNums[j]<<", ";
+        cout<< *(allNums+j)<<", ";
+        
     }
     cout<<endl;
     return 0;
