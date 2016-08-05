@@ -4,6 +4,7 @@
 //THIS IS AN UNFINISHED WORK
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -14,14 +15,13 @@ using namespace std;
 int main(){
     int doneFlag = 1,code = 0, booksOnHand = 0, enroll=0;
     bool RequiredFlag = 1,NewFlag = 1;
-    float copyPrice = 0,Total = 0,estPrice = 0;
-    const char *New,*Used,*Req,*Opt;
+    float copyPrice = 0;
+    //const char *New,*Used,*Req,*Opt;
+    string NewMsg, ReqMsg;
+   
+    ReqMsg = (RequiredFlag == 1 ? "Required":"Optional");
+    NewMsg = (NewFlag == 1 ? "New":"Used");
     
-    //Could omit this actually, just wanted to train with pointers
-    New = "New";
-    Used = "Used";
-    Req = "Required";
-    Opt = "Optional";
     
     while (doneFlag == 1){
         cout<<endl<<endl<<"***************************************************"<<endl;
@@ -44,8 +44,9 @@ int main(){
         cout<<"Inventory: "<< booksOnHand <<endl;
         cout<<"Enrollement: "<< enroll <<endl;
         
-        cout<<endl<< "The book is "<<(RequiredFlag == 1 ? Req:Opt)<<" and "<<(NewFlag == 1 ? New:Used)<<endl;
+        cout<<endl<< "The book is "<<ReqMsg<<" and "<<NewMsg<<endl;
         
+        /*
         if (RequiredFlag == 1){
             if NewFlag == 1{
                 //blabla
@@ -59,7 +60,7 @@ int main(){
                 //lalal
             }
         }
-        estPrice
+        */
         
         //NEXT BOOK CHECK
         cout<<"***************************************************"<<endl;
