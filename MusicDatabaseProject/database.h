@@ -1,4 +1,4 @@
-//Composer.h
+open//Composer.h
 //Alexandros Osana ®
 //Database project, Google Cpp tutorials
 //Music Database
@@ -34,4 +34,7 @@ private:
     int next_slot_;
     
 };
+
+
+
 

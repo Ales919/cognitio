@@ -1,20 +1,20 @@
-//Composer.h
+//composer.h
 //Alexandros Osana ®
 //Database project, Google Cpp tutorials
 //Music Database
 
 const int kDefaultRanking = 10;
 
-class Composer{
+class composer{
     
 public:
-    Composer();
-    ~Composer();
+    composer();
+    ~composer();
 
     //Getters and Setters (Accessors and Mutators)
     // Accessors and Mutators and Primary actions of the class
     void set_first_name(string in_first_name);
-    string first_name(); // fun to input first name
+    string first_name(); // function to input first name
     void set_last_name(string in_last_name);
     string last_name();
     void set_composer_yob(int in_composer_yob);
