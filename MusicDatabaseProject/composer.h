@@ -8,7 +8,7 @@
 #include <string>
 using namespace std;
 
-const int kDefaultRanking = 10;
+const int ls = 10;
 
 class composer{
     
