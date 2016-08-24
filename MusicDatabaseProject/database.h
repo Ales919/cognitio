@@ -17,15 +17,14 @@ public:
     
     // Add a new composer using operations in the Composer class.
     // For convenience, we return a reference (pointer) to the new record.
-    composer& AddComposer(string in_first_name, string in_last_name,
-                          string in_genre, int in_yob, string in_fact);
+    composer& AddComposer(string in_first_name, int in_yob, int ranking);
     // Search for a composer based on last name. Return a reference to the
     // found record.
     
     //TODO!!!//composer& GetComposer(string in_last_name);
     
     // Display all composers in the database.
-    void DisplayAll();
+    void displayAll();
     
     // Sort database records by rank and then display all.
     //void DisplayByRank();

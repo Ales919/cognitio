@@ -14,7 +14,7 @@ composer::composer(){
     ranking_ = kDefaultRanking;
 };
 composer::~composer(){
-    cout<< "Object " << first_name_<< " destructed"<<endl;
+    //cout<< "Object " << first_name_<< " destructed"<<endl;//muted for output reasons
 };
 
 //Modulators
