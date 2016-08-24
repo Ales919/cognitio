@@ -31,6 +31,6 @@ composer& database::AddComposer(string in_first_name, int in_yob, int ranking){
 //Methods
 void database::displayAll(){
     for (int i = 0;i<next_slot_;i++){
-        composer.display(Composers_[i]); // START FROM HERE 
+        composer.display(Composers_[i]); // START FROM HERE
     }
 };
